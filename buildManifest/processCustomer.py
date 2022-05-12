@@ -38,3 +38,6 @@ with open(destCustomerPodFile, "w") as podFile:
     except Exception as exc:
         print(exc)
 
+print(nsYaml)
+print(podYaml)
+
