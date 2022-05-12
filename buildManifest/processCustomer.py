@@ -10,7 +10,7 @@ customerNS = "template/namespace.yaml"
 customerPod = "template/pod.yaml"
 
 destCustomerNSFile = "Customers/{0}/namespace.yaml".format(args.customer)
-destCustomerPodFile = "template/{0}/pod.yaml".format(args.customer)
+destCustomerPodFile = "Customers/{0}/pod.yaml".format(args.customer)
 
 with open(customerNS, "r") as stream:
     try:
