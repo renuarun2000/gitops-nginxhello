@@ -28,7 +28,7 @@ pipeline{
                      git add -A
                      git commit -m "Added a new customer"
                      git push origin master
-                     echo "Creation of customer successful"
+                     echo "Creation of customer manifest for $Customer successful"
                  """
                  }
             }
