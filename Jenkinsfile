@@ -26,7 +26,7 @@ pipeline{
                          git pull origin
                          echo "Processing manifest files for customer $Customer"
                          mkdir -p "Customers/$Customer"
-                         python buildManifest/processCustomer.py $Customer
+                         python buildManifest/processCustomer.py --customer $Customer
                          git add -A
                          git commit -m "Added a new customer"
                          git push origin master
