@@ -12,7 +12,7 @@ pipeline{
                     doGenerateSubmoduleConfigurations: false,
                     extensions: [[$class: 'RelativeTargetDirectory',
                                     relativeTargetDir: '$BUILD_NUMBER/gitops-nginxhello']],
-                    userRemoteConfigs: [[credentialsId: '', url: 'https://github.com/renuarun2000/gitops-nginxhello.git]],
+                    userRemoteConfigs: [[credentialsId: '', url: 'https://github.com/renuarun2000/gitops-nginxhello.git']],
                     credentialsId: 'github-my-credentials-id'])
                 }
         }
