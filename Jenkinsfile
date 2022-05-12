@@ -26,7 +26,7 @@ pipeline{
                          git pull origin
                          echo "Processing manifest files for customer $Customer"
                          mkdir -p "Customers/$Customer"
-                         python processNamespace.py $Customer
+                         python buildManifest/processNamespace.py $Customer
                          git add -A
                          git commit -m "Added a new customer"
                          git push origin master
