@@ -6,8 +6,8 @@ my_parser.add_argument('--customer', action='store', type=str, required=True)
 
 args =  my_parser.parse_args()
 
-customerNS = "template/{0}/namespace.yaml".format(args.customer)
-customerPod = "template/{0}/pod.yaml".format(args.customer)
+customerNS = "template/namespace.yaml"
+customerPod = "template/pod.yaml"
 
 destCustomerNSFile = "Customers/{0}/namespace.yaml".format(args.customer)
 destCustomerPodFile = "template/{0}/pod.yaml".format(args.customer)
