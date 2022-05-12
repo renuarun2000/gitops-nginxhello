@@ -3,6 +3,8 @@ kind: Pod
 metadata:
   name: nginx
   namespace: TBD
+  annotations:
+    fluxcd.io/ignore: "false"
 spec:
   containers:
   - name: nginx
