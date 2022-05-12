@@ -28,7 +28,7 @@ with open(destCustomerNSFile, "w") as nsFile:
 with open(customerPod, "r") as stream:
     try:
         podYaml = yaml.safe_load(stream)
-        nsYaml["metadata"]["namespace"] = args.customer
+        podYaml["metadata"]["namespace"] = args.customer
     except Exception as exc:
         print(exc)
 
